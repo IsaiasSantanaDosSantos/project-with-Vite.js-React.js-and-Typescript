@@ -6,6 +6,7 @@ import '../src/styles/global.css'
 import { Home } from './components/Home'
 import { About } from './components/About'
 import { Menu } from './components/Menu'
+import { Post } from './components/Post'
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -15,6 +16,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
+      <Route path='/posts' element={<Post/>}/>
+      <Route path='/posts/:id' element={<Post/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
